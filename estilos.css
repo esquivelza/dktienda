@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.caja_padre {
+    height: 425vh;
+    background-color: #6D95B2;
+}
+.caja_hijo {
+    background-color: #121217;
+    justify-content: center;
+}
+.caja_cabeza :not(.titulo) {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    font-size: 30px;
+    font-family: sans-serif;
+    float: left;
+    padding: 5px;
+}
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #A6ACAF;
+}
+p {
+    font-size: 90px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #4C565D;
+}
+.menu {
+    background-color: #2A2E32;
+}
+  
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Verdana;
+}
+  
+  .menu a:hover {
+    color: #6D95B2;
+}
+  
+.caja_cuerpo  {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.caja_cuerpo figure {
+    padding: 10px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.caja_cuerpo img {
+    width: 100%;
+    height: 100%;
+}
+
+.caja_cuerpo figcaption {
+    font-size: 15px;
+    font-family: Verdana;
+    padding: 5px;
+    font-weight: bold;
+    color: #A6ACAF;
+}
+
+.caja_formulario {
+    background-color: #2A2E32;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+  
+form {
+    width: 300px;
+    position: relative;
+    left: 40%;
+   padding: 10px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    color: #b8b8b8;
+    font-family: Verdana;
+}
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+footer {
+    text-align: center;
+}
+#pie {
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #4C565D;
+}
+.caja_padre2 {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.pagina2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+.pagina2 p {
+    font-size: 24px;
+    color: #333;
+}
+  
+  .pagina2 img {
+    width: 200px;
+    margin-top: 20px;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pagina2 img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+
+  
