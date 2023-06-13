@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog del Gimnasio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #d8d5d5;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background-image: url('imagenes/imagen20.jpg');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+  color: #141212;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.blog-posts {
+  margin-top: 40px;
+}
+
+.post {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.post img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.post-content h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.post-content p {
+  margin-top: 10px;
+}
+
+.read-more {
+  color: #333;
+  text-decoration: none;
+}
+
+.newsletter {
+  background-color: #625959;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.newsletter p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.newsletter form {
+  margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+}
+
+.newsletter button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Blog del Gimnasio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Bienvenido al Blog del Gimnasio</h2>
+      <p>Descubre consejos, rutinas de ejercicio y consejos de nutrición para mantenerte en forma.</p>
+      <a href="https://www.youtube.com/results?search_query=consejos+para+el+gym" class="btn">Explorar</a>
+    </div>
+  </section>
+
+  <section class="blog-posts">
+    <h2>Artículos Recientes</h2>
+
+    <div class="post">
+      <img src="imagenes/imagen18.jpg" alt="Artículo 1">
+      <div class="post-content">
+        <h3>Consejos para un entrenamiento efectivo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sit amet libero fermentum
+          elementum nec sed felis. Morbi auctor laoreet quam.</p>
+        <a href="#" class="read-more">Leer más</a>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="imagenes/imagen19.jpg" alt="Artículo 2">
+      <div class="post-content">
+        <h3>Los mejores alimentos para ganar masa muscular</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae enim sit amet libero fermentum
+          elementum nec sed felis. Morbi auctor laoreet quam.</p>
+        <a href="#" class="read-more">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <p>Recibe las últimas noticias, consejos y promociones directamente en tu bandeja de entrada.</p>
+    <form>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy;2023 Mi página web. Todos los derechos reservados a Norvinjosee.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

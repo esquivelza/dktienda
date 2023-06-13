@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
 .caja_padre {
     height: 425vh;
-    background-color: #6D95B2;
+    background-color: #ffffff;
 }
+
 .caja_hijo {
-    background-color: #121217;
+    background-color: #ffffffc5;
     justify-content: center;
 }
+
 .caja_cabeza :not(.titulo) {
     padding: 5px;
     display: flex;
@@ -17,48 +20,53 @@
     justify-content: center;
     align-items: center;
 }
+
 .titulo {
     font-size: 30px;
     font-family: sans-serif;
     float: left;
     padding: 5px;
 }
+
 h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     color: #A6ACAF;
 }
+
 p {
     font-size: 90px;
     font-family: Verdana;
     font-weight: bold;
-    color: #4C565D;
+    color: #4c565d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
+
 .menu {
     background-color: #2A2E32;
 }
-  
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-  
+
 .menu li {
     display: inline-block;
     margin-right: 10px;
 }
-  
+
 .menu a {
     text-decoration: none;
     color: #000000;
     font-family: Verdana;
 }
-  
-  .menu a:hover {
-    color: #6D95B2;
+
+.menu a:hover {
+    color: #d6eeff;
 }
-  
-.caja_cuerpo  {
+
+.caja_cuerpo {
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -82,7 +90,7 @@ p {
     font-family: Verdana;
     padding: 5px;
     font-weight: bold;
-    color: #A6ACAF;
+    color: #131211;
 }
 
 .caja_formulario {
@@ -92,86 +100,94 @@ p {
     gap: 10px;
     text-align: center;
     align-items: center;
+    margin-bottom: 20px; /* Añadido margen inferior */
 }
-  
+
 form {
     width: 300px;
     position: relative;
     left: 40%;
-   padding: 10px;
+    padding: 10px;
 }
-  
+
 label {
     display: block;
     font-weight: bold;
     color: #b8b8b8;
     font-family: Verdana;
 }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  textarea,
-  select {
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-  
-  input[type="submit"] {
+
+input[type="submit"] {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
-  
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 footer {
     text-align: center;
 }
+
 #pie {
     font-size: 30px;
     font-family: Verdana;
     font-weight: bold;
     color: #4C565D;
 }
-.caja_padre2 {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-  
-.pagina2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-.pagina2 p {
-    font-size: 24px;
-    color: #333;
-}
-  
-  .pagina2 img {
-    width: 200px;
-    margin-top: 20px;
-    opacity: 0.8;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .pagina2 img:hover {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
 
-  
+.ventana-emergente {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ventana-emergente img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cerrar {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}

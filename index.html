@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,80 +9,83 @@
     <title>DK</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <div class="caja_padre">
         <div class="caja_cabeza">
-           <div class="titulo"> <h1>TIENDA VIRTUAl DK</h1> </div>
+            <div class="titulo">
+                <h1>TIENDA VIRTUAL DK</h1>
+            </div>
             <p>¡No pain, no gain!</p>
             <div class="menu">
                 <ul>
-                    <li><a href="pagina2.html">INICIO</a></li>
-                    <li><a href="pagina2.html">BLOG</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
                     <li><a href="pagina2.html">ROPA Y ACCESORIOS</a></li>
                     <li><a href="pagina2.html">CUENTA</a></li>
-                    <li><a href="pagina2.html">CONTACTANOS</a></li>
+                    <li><a href="contacto.html">CONTACTANOS</a></li>
                 </ul>
             </div>
         </div>
         <div class="caja_hijo">
             <div class="caja_cuerpo">
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen1.jpg')">
                     <img src="imagenes/imagen1.jpg" alt="imagen1">
                     <figcaption>BARRA OLIMPOCA HEXAGONAL</figcaption>
                 </figure>
-                <figure>
+               
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen2.jpg', '')">
                     <img src="imagenes/imagen2.jpg" alt="imagen2">
                     <figcaption>BARRA MULTIGRIP</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen3.jpg', '')">
                     <img src="imagenes/imagen3.jpg" alt="imagen3">
                     <figcaption>BALDAS ESTANTERIAS</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen4.jpg', '')">
                     <img src="imagenes/imagen4.jpg" alt="imagen4">
                     <figcaption>SANDBAG PARA STRONGMAN</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen5.jpg', '')">
                     <img src="imagenes/imagen5.jpg" alt="imagen5">
                     <figcaption>MANCUERNA DE 47Kg</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen6.jpg', '')">
                     <img src="imagenes/imagen6.jpg" alt="imagen6">
                     <figcaption>RSP SQUAT</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen7.jpg', '')">
                     <img src="imagenes/imagen7.jpg" alt="imagen7">
                     <figcaption>RODILLERA SW</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen8.jpg', '')">
                     <img src="imagenes/imagen8.jpg" alt="imagen8">
                     <figcaption>CUERDA PARA TREPAR</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen9.jpg', '')">
                     <img src="imagenes/imagen9.jpg" alt="imagen9">
                     <figcaption>DISCOS POWERLIFTING</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen10.jpg', '')">
                     <img src="imagenes/imagen10.jpg" alt="imagen10">
                     <figcaption>COMBA DYNAMITE</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen11.jpg', '')">
                     <img src="imagenes/imagen11.jpg" alt="imagen11">
                     <figcaption>KETTLEBELL CAST IRON</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen12.jpg', '')">
                     <img src="imagenes/imagen12.jpg" alt="imagen12">
                     <figcaption>Z CURL BAR</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen13.jpg', '')">
                     <img src="imagenes/imagen13.jpg" alt="imagen13">
                     <figcaption>CHALECO BELICO</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen14.jpg', '')">
                     <img src="imagenes/imagen14.jpg" alt="imagen14">
                     <figcaption>MANCUERNAS PARA MALOTES</figcaption>
                 </figure>
-                <figure>
+                <figure onclick="mostrarVentanaEmergente('imagenes/imagen15.jpg', '')">
                     <img src="imagenes/imagen15.jpg" alt="imagen15">
                     <figcaption>BARRA HEXAGONAL</figcaption>
                 </figure>
@@ -90,36 +94,44 @@
                 <form>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
-                
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                
+
                     <label for="contrasena">Contraseña:</label>
                     <input type="password" id="contrasena" name="contrasena" required>
-                
+
                     <label for="direccion">Dirección:</label>
                     <textarea id="direccion" name="direccion" rows="4"></textarea>
-                
+
                     <label for="ciudad">Ciudad:</label>
                     <input type="text" id="ciudad" name="ciudad">
-                
+
                     <label for="pais">País:</label>
                     <select id="pais" name="pais">
-                      <option value="1">Selecciona un país</option>
-                      <option value="2">País 1</option>
-                      <option value="3">País 2</option>
-                      <option value="4">País 3</option>
+                        <option value="1">Selecciona un país</option>
+                        <option value="2">País 1</option>
+                        <option value="3">País 2</option>
+                        <option value="4">País 3</option>
                     </select>
                     <label for="comentario">Comentario:</label>
-                     <textarea id="comentario" name="comentario" rows="4"></textarea>
-                
+                    <textarea id="comentario" name="comentario" rows="4"></textarea>
                     <input type="submit" value="Enviar">
-                  </form>
+                </form>
             </div>
         </div>
     </div>
+    <div id="ventanaEmergente" class="ventana-emergente">
+        <span class="cerrar" onclick="cerrarVentanaEmergente()">&times;</span>
+        <img id="imagenVentanaEmergente" src="" alt="">
+        <div id="detallesProducto"></div>
+    </div>
+    <script src="script.js"></script>
     <footer>
         <p id="pie">© 2023 Mi página web. Todos los derechos reservados a Norvinjosee.</p>
     </footer>
 </body>
+
 </html>
+
+

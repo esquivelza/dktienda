@@ -4,13 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
     <title>DK</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+        }
+    
+        h1 {
+          color: #333;
+        }
+    
+        p {
+          color: #666;
+        }
+    
+        input[type="number"] {
+          padding: 5px;
+          width: 100px;
+          margin: 10px;
+        }
+    
+        button {
+          padding: 10px 20px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+    
+        #resultado {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+      </style>
 </head>
 <body class="caja_padre2">
     <div class="pagina2">
-        <p>Pagina en construcción</p>
-        <img src="imagenes/imagen17.jpg" alt="imagen17">
+        <p>Pagina en construcción, por el momento</p>
     </div>
+    <h1>Adivina el número</h1>
+
+    <p>Intenta adivinar un número entre 1 y 100.</p>
+    <p>Tienes un máximo de 10 intentos.</p>
+  
+    <input type="number" id="numero" min="1" max="100">
+    <button onclick="adivinarNumero()">Adivinar</button>
+  
+    <p id="resultado"></p>
+  
+    <script>
+      var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+      var intentos = 10;
+  
+      function adivinarNumero() {
+        var numeroUsuario = parseInt(document.getElementById('numero').value);
+  
+        if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 100) {
+          document.getElementById('resultado').textContent = "Ingresa un número válido entre 1 y 100.";
+          return;
+        }
+  
+        intentos--;
+  
+        if (numeroUsuario === numeroAleatorio) {
+          document.getElementById('resultado').textContent = "¡Felicidades! Adivinaste el número.";
+          document.getElementById('resultado').style.color = "green";
+          desactivarJuego();
+        } else if (intentos === 0) {
+          document.getElementById('resultado').textContent = "¡Perdiste! El número correcto era " + numeroAleatorio + ".";
+          document.getElementById('resultado').style.color = "red";
+          desactivarJuego();
+        } else if (numeroUsuario < numeroAleatorio) {
+          document.getElementById('resultado').textContent = "Intenta con un número más alto. Te quedan " + intentos + " intentos.";
+          document.getElementById('resultado').style.color = "black";
+        } else if (numeroUsuario > numeroAleatorio) {
+          document.getElementById('resultado').textContent = "Intenta con un número más bajo. Te quedan " + intentos + " intentos.";
+          document.getElementById('resultado').style.color = "black";
+        }
+  
+        document.getElementById('numero').value = '';
+      }
+  
+      function desactivarJuego() {
+        document.getElementById('numero').disabled = true;
+        document.querySelector('button').disabled = true;
+      }
+    </script>
 </body>
 </html>
